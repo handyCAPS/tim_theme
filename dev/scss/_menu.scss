@@ -1,0 +1,31 @@
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+        a {
+            text-decoration: none;
+        }
+}
+
+.menu--main {
+    @extend .clearfix;
+    background-color: #000;
+        li {
+            float: left;
+        }
+        a {
+            color: #FFF;
+            display: block;
+            padding: 0.5em 1em;
+        }
+}
+
+.main-navigation {
+    float: right;
+    border: 1px solid red;
+        &.toggled button {
+            display: none;
+        }
+}
